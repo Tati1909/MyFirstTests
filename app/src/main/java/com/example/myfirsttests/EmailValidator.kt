@@ -32,5 +32,9 @@ class EmailValidator : TextWatcher {
         fun isValidEmail(email: CharSequence?): Boolean {
             return email != null && EMAIL_PATTERN.matcher(email).matches()
         }
+
+        fun isNullEmail(email: CharSequence?): Boolean {
+            return email != null
+        }
     }
 }
